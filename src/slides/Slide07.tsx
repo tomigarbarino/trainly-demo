@@ -1,9 +1,8 @@
-// URLs frescas del último fetch del Figma
-const imgCapitulos   = 'https://www.figma.com/api/mcp/asset/068ac85b-496e-40dc-bcc4-125685fd2e80'
-const imgFlashcards  = 'https://www.figma.com/api/mcp/asset/b54564e5-fa7d-4313-ada4-85f7d511bf86'
-const imgQuizzes     = 'https://www.figma.com/api/mcp/asset/50d22a99-d74a-4afe-83d1-8b188d1b7755'
-const imgEvaluaciones = 'https://www.figma.com/api/mcp/asset/deea78a4-18f2-4751-a8f6-6f2fea3b430c'
-const imgNarracion   = 'https://www.figma.com/api/mcp/asset/324f6162-db74-4bc5-8d5b-00b6463c2e50'
+const imgCapitulos    = 'https://www.figma.com/api/mcp/asset/8d5385be-d5d5-48c0-8741-3ddae61159d2'
+const imgFlashcards   = 'https://www.figma.com/api/mcp/asset/41a51410-0186-4f44-833e-33538d1c338c'
+const imgQuizzes      = 'https://www.figma.com/api/mcp/asset/584f02c5-51ad-48d1-b2bc-89c3e7b7799c'
+const imgEvaluaciones = 'https://www.figma.com/api/mcp/asset/ed42d126-e128-4207-8760-5ba1e295d624'
+const imgNarracion    = 'https://www.figma.com/api/mcp/asset/2094470c-f3b5-4cfe-9ead-1fe5e8ae8ee0'
 
 export default function Slide07() {
   return (
@@ -15,21 +14,49 @@ export default function Slide07() {
         Aprendizaje diseñado para retener
       </p>
 
-      {/* Container: centra las dos filas verticalmente dentro de 529px */}
       <div
         className="absolute flex flex-col gap-8 justify-center"
         style={{ left: 80, top: 128, width: 1190, height: 529 }}
       >
-        {/* Fila superior — 3 cards de igual ancho, altura natural del contenido */}
         <div className="flex gap-8 items-stretch w-full shrink-0">
-          <FeatureCard img={imgCapitulos}    title="Capítulos"             desc="Capitulación y segmentación del contenido cargado."     imgW={107} imgH={75} />
-          <FeatureCard img={imgFlashcards}   title="Flashcards"            desc="Tarjetas diseñadas para recordar conceptos clave."       imgW={107} imgH={107} />
-          <FeatureCard img={imgQuizzes}      title="Quizzes"               desc="Evaluaciones dinámicas basadas en el contenido."        imgW={95}  imgH={88} />
+          <FeatureCard
+            img={imgCapitulos}
+            title="Capítulos"
+            desc="Capitulación y segmentación del contenido cargado."
+            imgW={107.032} imgH={75.497}
+            imgOffsetX={104.66} imgOffsetY={0.57}
+            cardWidth={375.33}
+          />
+          <FeatureCard
+            img={imgFlashcards}
+            title="Flashcards"
+            desc="Tarjetas diseñadas para recordar conceptos clave."
+            imgW={107.364} imgH={107.032}
+            imgOffsetX={96.27} imgOffsetY={-1}
+          />
+          <FeatureCard
+            img={imgQuizzes}
+            title="Quizzes"
+            desc="Evaluaciones dinámicas basadas en el contenido."
+            imgW={95.452} imgH={87.537}
+            imgLeft={236.51} imgTop={27.23}
+          />
         </div>
-        {/* Fila inferior — 2 cards más anchos, altura natural (menor que arriba) */}
         <div className="flex gap-8 items-stretch w-full shrink-0">
-          <FeatureCard img={imgEvaluaciones} title="Evaluaciones en vivo"  desc="Un agente dedicado que valida los conocimientos."       imgW={90}  imgH={95} />
-          <FeatureCard img={imgNarracion}    title="Narracion de contenido" desc="Repasá el contenido escuchandolo en cualquier lugar."  imgW={95}  imgH={79} />
+          <FeatureCard
+            img={imgEvaluaciones}
+            title="Evaluaciones en vivo"
+            desc="Un agente dedicado que valida los conocimientos."
+            imgW={90.336} imgH={94.575}
+            imgOffsetX={221.08} imgOffsetY={-0.5}
+          />
+          <FeatureCard
+            img={imgNarracion}
+            title="Narracion de contenido"
+            desc="Repasá el contenido escuchandolo en cualquier lugar."
+            imgW={94.597} imgH={78.836}
+            imgOffsetX={202.56} imgOffsetY={-1.56}
+          />
         </div>
       </div>
     </div>
@@ -42,26 +69,41 @@ interface CardProps {
   desc: string
   imgW: number
   imgH: number
+  imgOffsetX?: number
+  imgOffsetY?: number
+  imgLeft?: number
+  imgTop?: number
+  cardWidth?: number
 }
 
-function FeatureCard({ img, title, desc, imgW, imgH }: CardProps) {
+function FeatureCard({ img, title, desc, imgW, imgH, imgOffsetX, imgOffsetY, imgLeft, imgTop, cardWidth }: CardProps) {
+  const useCenteredPos = imgOffsetX !== undefined
+
+  const imgStyle: React.CSSProperties = useCenteredPos
+    ? {
+        position: 'absolute',
+        left: `calc(50% + ${imgOffsetX}px)`,
+        top: `calc(50% + ${imgOffsetY ?? 0}px)`,
+        transform: 'translate(-50%, -50%)',
+        width: imgW,
+        height: imgH,
+      }
+    : {
+        position: 'absolute',
+        left: imgLeft,
+        top: imgTop,
+        width: imgW,
+        height: imgH,
+      }
+
   return (
-    <div className="flex-1 bg-primary border-2 border-dark rounded-[24px] flex flex-col items-center justify-center px-8 pt-10 pb-12 relative overflow-hidden">
-      {/* Icono decorativo centrado en el lado derecho del card */}
-      <div
-        className="absolute"
-        style={{
-          right: 32,
-          top: '50%',
-          transform: 'translateY(-50%)',
-          width: imgW,
-          height: imgH,
-          opacity: 0.2,
-        }}
-      >
-        <img alt="" className="w-full h-full object-contain" src={img} />
+    <div
+      className="bg-primary border-2 border-dark rounded-[24px] flex flex-col gap-3 items-start justify-center px-8 pt-10 pb-12 relative overflow-hidden"
+      style={cardWidth ? { width: cardWidth, flexShrink: 0 } : { flex: '1 0 0', minWidth: 0 }}
+    >
+      <div style={imgStyle}>
+        <img alt="" className="absolute block max-w-none w-full h-full" src={img} />
       </div>
-      {/* Texto alineado a la izquierda */}
       <div className="flex flex-col gap-3 items-start justify-center w-full relative">
         <p className="font-poppins font-extrabold text-light text-[32px] leading-none whitespace-nowrap">
           {title}

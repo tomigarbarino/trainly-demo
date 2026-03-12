@@ -15,7 +15,6 @@ export default function Slide03() {
         className="absolute flex flex-col gap-14 items-center"
         style={{ left: '50%', transform: 'translateX(-50%)', top: 200 }}
       >
-        {/* Questions */}
         <div className="flex flex-col gap-6 items-center">
           <p className="font-poppins font-bold text-dark text-[24px] leading-none text-center whitespace-nowrap">
             Hoy un líder no puede responder
@@ -27,7 +26,6 @@ export default function Slide03() {
           </div>
         </div>
 
-        {/* Result */}
         <div className="flex flex-col gap-4 items-center">
           <p className="font-poppins font-bold text-dark text-[36px] leading-none text-center">
             ¿El resultado?

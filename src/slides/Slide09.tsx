@@ -27,7 +27,6 @@ export default function Slide09() {
             className="bg-bg01 border-2 border-dark rounded-full flex gap-6 items-center px-8 py-6"
           >
             <p className="font-poppins font-medium text-dark text-[24px] leading-none whitespace-nowrap">{label}</p>
-            {/* Estructura fiel al Figma: outer landscape → inner rotate-90 portrait → inset negativo para no clipear la punta */}
             <div className="shrink-0 flex items-center justify-center relative" style={{ width: 28.337, height: 22.782 }}>
               <div style={{ transform: 'rotate(90deg)', width: 22.782, height: 28.337, flexShrink: 0 }}>
                 <div className="absolute" style={{ inset: '-1px' }}>

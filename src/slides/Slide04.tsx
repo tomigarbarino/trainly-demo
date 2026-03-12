@@ -3,7 +3,6 @@ const imgShape = 'https://www.figma.com/api/mcp/asset/aef785a2-1ecd-4fe8-ba46-48
 export default function Slide04() {
   return (
     <div className="relative w-full h-full overflow-hidden rounded-[32px] bg-light">
-      {/* Orange shape left */}
       <div
         className="absolute"
         style={{ left: -194, top: 0, width: 593, height: 760, transform: 'rotate(180deg)' }}
@@ -11,7 +10,6 @@ export default function Slide04() {
         <img alt="" className="absolute w-full h-full" src={imgShape} />
       </div>
 
-      {/* Text block */}
       <div
         className="absolute flex flex-col items-start"
         style={{ left: 488, top: '50%', transform: 'translateY(-50%)', width: 726 }}
@@ -22,7 +20,7 @@ export default function Slide04() {
         <p className="font-poppins font-extrabold text-dark text-[40px] leading-none">
           La capacitación actual
         </p>
-        <p className="font-poppins font-extrabold text-primary leading-none" style={{ fontSize: 148, lineHeight: 1 }}>
+        <p className="font-poppins font-extrabold text-primary leading-none whitespace-nowrap" style={{ fontSize: 148, lineHeight: 1, width: 812 }}>
           no escala
         </p>
       </div>

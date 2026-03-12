@@ -15,7 +15,6 @@ export default function Slide11() {
         className="absolute flex flex-col gap-10 items-center"
         style={{ left: 202, top: 178, width: 947 }}
       >
-        {/* 85% graphic + subtitle */}
         <div className="flex flex-col gap-8 items-center w-full">
           <div className="relative" style={{ width: 566, height: 235 }}>
             <img alt="85%" className="absolute w-full h-full object-contain" src={img85} />
@@ -25,7 +24,6 @@ export default function Slide11() {
           </p>
         </div>
 
-        {/* Feature pills */}
         <div className="flex flex-col gap-[18px] items-center w-full">
           <CheckPill text="Sistema de recompensas por objetivos cumplidos." />
           <div className="flex gap-6 items-center">

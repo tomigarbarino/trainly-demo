@@ -4,12 +4,10 @@ const imgShape = 'https://www.figma.com/api/mcp/asset/75baafbe-2763-4ae0-9a1e-65
 export default function Slide12() {
   return (
     <div className="relative w-full h-full overflow-hidden rounded-[32px] bg-primary">
-      {/* Shape right */}
       <div className="absolute" style={{ right: -179, top: 0, width: 593, height: 760 }}>
         <img alt="" className="absolute w-full h-full" src={imgShape} />
       </div>
 
-      {/* Logo + CTA */}
       <div
         className="absolute flex flex-col gap-8 items-start"
         style={{ left: 110, top: '50%', transform: 'translateY(-50%)', width: 718 }}

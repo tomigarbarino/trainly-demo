@@ -82,7 +82,6 @@ export default function App() {
           </div>
         ))}
 
-        {/* Pagination dots overlay at the same position as in the Figma design */}
         <div
           style={{
             position: 'absolute',

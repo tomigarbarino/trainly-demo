@@ -10,7 +10,6 @@ const features = [
 export default function Slide08() {
   return (
     <div className="relative w-full h-full overflow-hidden rounded-[32px] bg-light">
-      {/* Header */}
       <div
         className="absolute flex flex-col gap-3 items-center"
         style={{ left: '50%', transform: 'translateX(-50%)', top: 70 }}
@@ -23,7 +22,6 @@ export default function Slide08() {
         </p>
       </div>
 
-      {/* Features grid */}
       <div
         className="absolute flex flex-col gap-8"
         style={{ left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: 1125 }}
