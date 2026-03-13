@@ -52,8 +52,8 @@ export default function Slide07() {
           />
           <FeatureCard
             img={imgNarracion}
-            title="Narracion de contenido"
-            desc="Repasá el contenido escuchandolo en cualquier lugar."
+            title="Narración de contenido"
+            desc="Repasá el contenido escuchándolo en cualquier lugar."
             imgW={94.597} imgH={78.836}
             imgOffsetX={202.56} imgOffsetY={-1.56}
           />
