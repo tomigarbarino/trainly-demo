@@ -1,4 +1,4 @@
-const imgCheck = 'https://www.figma.com/api/mcp/asset/f6fb6ad7-4049-47d8-b517-97b31710506e'
+const imgCheck = '/images/figma/slide08-check.svg'
 
 const features = [
   'Responde dudas sobre el manual.',

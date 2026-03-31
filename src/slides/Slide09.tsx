@@ -1,4 +1,4 @@
-const imgVector = 'https://www.figma.com/api/mcp/asset/36a14ead-1859-4edc-a869-aca7e6fc882d'
+const imgVector = '/images/figma/slide09-vector.svg'
 
 const metrics = [
   { label: 'Progreso del usuario', value: 'Seguimiento real del avance' },

@@ -9,6 +9,7 @@ import Slide06 from './slides/Slide06'
 import Slide07 from './slides/Slide07'
 import Slide08 from './slides/Slide08'
 import Slide09 from './slides/Slide09'
+import Slide13 from './slides/Slide13'
 import Slide10 from './slides/Slide10'
 import Slide11 from './slides/Slide11'
 import Slide12 from './slides/Slide12'
@@ -16,11 +17,11 @@ import Slide12 from './slides/Slide12'
 const SLIDES = [
   Slide01, Slide02, Slide03, Slide04,
   Slide05, Slide06, Slide07, Slide08,
-  Slide09, Slide10, Slide11, Slide12,
+  Slide09, Slide13, Slide10, Slide11, Slide12,
 ]
 
 // Slides with dark (orange) background need light dots
-const DARK_BG_SLIDES = new Set([0, 11])
+const DARK_BG_SLIDES = new Set([0, 12])
 
 const SLIDE_W = 1350
 const SLIDE_H = 760

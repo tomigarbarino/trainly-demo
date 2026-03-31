@@ -1,7 +1,7 @@
-const imgGroup13 = 'https://www.figma.com/api/mcp/asset/efe90653-480d-4273-baae-e5537f3650d5'
-const imgGroup11 = 'https://www.figma.com/api/mcp/asset/837747c0-3f7e-45f1-b374-6092c3ca1b0d'
-const imgGroup12 = 'https://www.figma.com/api/mcp/asset/0f7f4c72-8fde-42c8-ba9f-d33e42c2fd29'
-const imgGroup20 = 'https://www.figma.com/api/mcp/asset/00e012b5-e288-425d-9da7-bd84cffcbbfd'
+const imgGroup13 = '/images/figma/slide02-group13.svg'
+const imgGroup11 = '/images/figma/slide02-group11.svg'
+const imgGroup12 = '/images/figma/slide02-group12.svg'
+const imgGroup20 = '/images/figma/slide02-group20.png'
 
 const docCards = [
   { img: imgGroup13, label: 'Guías internas', imgW: 102.054, imgH: 104.471 },

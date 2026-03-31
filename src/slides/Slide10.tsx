@@ -1,5 +1,5 @@
-const imgLabIcon = 'https://www.figma.com/api/mcp/asset/d6775963-55e8-4a07-895c-5c1b9e9a2fa2'
-const imgScientist = 'https://www.figma.com/api/mcp/asset/3a9ca2b2-007d-4791-ae90-2f52cd07736a'
+const imgLabIcon = '/images/figma/slide10-lab.svg'
+const imgScientist = '/images/figma/slide10-scientist.svg'
 
 export default function Slide10() {
   return (

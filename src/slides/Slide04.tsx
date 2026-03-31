@@ -1,18 +1,23 @@
-const imgShape = 'https://www.figma.com/api/mcp/asset/aef785a2-1ecd-4fe8-ba46-486784ec4cbb'
+const imgShape = '/images/figma/slide04-shape.svg'
 
 export default function Slide04() {
   return (
     <div className="relative w-full h-full overflow-hidden rounded-[32px] bg-light">
       <div
         className="absolute"
-        style={{ left: -194, top: 0, width: 593, height: 760, transform: 'rotate(180deg)' }}
+        style={{
+          left: 0,
+          top: 0,
+          width: 593.2643486678727,
+          height: 760,
+        }}
       >
-        <img alt="" className="absolute w-full h-full" src={imgShape} />
+        <img alt="" className="absolute inset-0 size-full object-fill" src={imgShape} />
       </div>
 
       <div
         className="absolute flex flex-col items-start"
-        style={{ left: 488, top: '50%', transform: 'translateY(-50%)', width: 726 }}
+        style={{ left: 600, top: 282.5, width: 726 }}
       >
         <p className="font-poppins font-medium text-dark text-[24px] leading-none mb-2">
           Por ende...

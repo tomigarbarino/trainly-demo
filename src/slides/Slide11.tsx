@@ -1,5 +1,5 @@
-const img85 = 'https://www.figma.com/api/mcp/asset/b76c2956-e10b-47c5-a494-ef6b5d264359'
-const imgCheck = 'https://www.figma.com/api/mcp/asset/599fabab-762c-43cb-9d61-6ae8d39ce250'
+const img85 = '/images/figma/slide11-85.svg'
+const imgCheck = '/images/figma/slide11-check.svg'
 
 export default function Slide11() {
   return (

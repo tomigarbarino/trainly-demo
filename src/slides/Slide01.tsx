@@ -1,4 +1,4 @@
-const logo = 'https://www.figma.com/api/mcp/asset/8b968fcb-e37d-49e7-b7dc-8db581b67d14'
+const logo = '/images/figma/slide01-logo.svg'
 
 export default function Slide01() {
   return (

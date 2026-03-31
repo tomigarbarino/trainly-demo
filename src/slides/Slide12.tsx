@@ -1,5 +1,5 @@
-const imgLogo = 'https://www.figma.com/api/mcp/asset/2bc248aa-8769-49f8-be20-258642afe873'
-const imgShape = 'https://www.figma.com/api/mcp/asset/75baafbe-2763-4ae0-9a1e-655181663fd8'
+const imgLogo = '/images/figma/slide12-logo.svg'
+const imgShape = '/images/figma/slide12-shape.svg'
 
 export default function Slide12() {
   return (

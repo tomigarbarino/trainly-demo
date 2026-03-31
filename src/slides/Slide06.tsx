@@ -1,8 +1,8 @@
-const imgSubir      = 'https://www.figma.com/api/mcp/asset/8c602b9e-66ee-4e49-b882-414fdc0d0513'
-const imgProcesar   = 'https://www.figma.com/api/mcp/asset/7855b5fd-7892-4370-9f35-b5194b35fabf'
-const imgCrear      = 'https://www.figma.com/api/mcp/asset/6bd0659f-8870-4530-af40-fd12c5990b1b'
-const imgAprendizaje = 'https://www.figma.com/api/mcp/asset/10b6ef83-89e1-4e5f-913a-7987b01570b3'
-const imgArrow      = 'https://www.figma.com/api/mcp/asset/1591075d-ccfa-40cd-b22c-c7a63063e70e'
+const imgSubir       = '/images/figma/slide06-subir.svg'
+const imgProcesar    = '/images/figma/slide06-procesar.svg'
+const imgCrear       = '/images/figma/slide06-crear.svg'
+const imgAprendizaje = '/images/figma/slide06-aprendizaje.svg'
+const imgArrow       = '/images/figma/slide06-arrow.svg'
 
 const steps = [
   { img: imgSubir,       title: 'Subir',        desc: 'Carga tus archivos PDF o manuales.' },

@@ -1,8 +1,8 @@
-const imgCapitulos    = 'https://www.figma.com/api/mcp/asset/8d5385be-d5d5-48c0-8741-3ddae61159d2'
-const imgFlashcards   = 'https://www.figma.com/api/mcp/asset/41a51410-0186-4f44-833e-33538d1c338c'
-const imgQuizzes      = 'https://www.figma.com/api/mcp/asset/584f02c5-51ad-48d1-b2bc-89c3e7b7799c'
-const imgEvaluaciones = 'https://www.figma.com/api/mcp/asset/ed42d126-e128-4207-8760-5ba1e295d624'
-const imgNarracion    = 'https://www.figma.com/api/mcp/asset/2094470c-f3b5-4cfe-9ead-1fe5e8ae8ee0'
+const imgCapitulos    = '/images/figma/slide07-capitulos.svg'
+const imgFlashcards   = '/images/figma/slide07-flashcards.svg'
+const imgQuizzes      = '/images/figma/slide07-quizzes.svg'
+const imgEvaluaciones = '/images/figma/slide07-evaluaciones.svg'
+const imgNarracion    = '/images/figma/slide07-narracion.svg'
 
 export default function Slide07() {
   return (

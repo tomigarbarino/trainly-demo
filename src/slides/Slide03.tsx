@@ -1,5 +1,5 @@
-const imgGroup19 = 'https://www.figma.com/api/mcp/asset/9e6d4b91-d3c4-4d09-858d-a8bd5d82c586'
-const imgGroup20 = 'https://www.figma.com/api/mcp/asset/8b0c4e1e-f1a0-49d4-adc8-69e8df0de90b'
+const imgGroup19 = '/images/figma/slide03-group19.svg'
+const imgGroup20 = '/images/figma/slide03-group20.svg'
 
 export default function Slide03() {
   return (

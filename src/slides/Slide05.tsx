@@ -1,5 +1,5 @@
-const imgShape = 'https://www.figma.com/api/mcp/asset/0dec0365-8855-4b72-b0f3-2e35fbca6c89'
-const imgTLetter = 'https://www.figma.com/api/mcp/asset/223616aa-dc36-43a2-b1d5-5d1e411069b3'
+const imgShape = '/images/figma/slide05-shape.svg'
+const imgTLetter = '/images/figma/slide05-t-letter.svg'
 
 export default function Slide05() {
   return (
