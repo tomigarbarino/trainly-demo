@@ -15,9 +15,9 @@ import Slide11 from './slides/Slide11'
 import Slide12 from './slides/Slide12'
 
 const SLIDES = [
-  Slide01, Slide02, Slide03, Slide04,
-  Slide05, Slide06, Slide07, Slide08,
-  Slide09, Slide13, Slide10, Slide11, Slide12,
+  Slide01, Slide02, Slide07, Slide03, Slide04,
+  Slide05, Slide06, Slide08, Slide09, Slide13,
+  Slide10, Slide11, Slide12,
 ]
 
 // Slides with dark (orange) background need light dots
